@@ -1,0 +1,813 @@
+\-size                                   4 7        // level size in rooms
+
+\?drill                            T
+\?udjat_socket                     u
+\?clover                           Q
+\?vlad_floor                       v
+\?chainandblocks_ceiling           C
+\?chain_ceiling                    H
+\?vlad                             V
+\?crown_statue                     c
+\?nonreplaceable_babylon_floor     =
+\?spikes                           ^
+\?litwalltorch                     O
+\?arrow_trap                       z
+\?slidingwall_switch               )
+\?slidingwall_ceiling              (
+\?chunk_ground                     5
+\?chunk_air                        6
+\?chunk_door                       8
+\?empty                            0
+\?floor                            1
+\?floor%50                         2
+\?floor_hard                       X
+\?floor_hard%50%floor              Y
+\?adjacent_floor                   Z
+\?ladder                           L
+\?ladder_plat                      P
+\?door                             9
+\?door2                            D
+\?locked_door                      /
+\?push_block                       4
+\?powder_keg                       o
+\?timed_powder_keg                 m
+\?falling_platform                 F
+\?conveyorbelt_left                <
+\?conveyorbelt_right               >
+\?key                              y
+\?factory_generator                A
+\?treasure                         t
+\?oldhunter                        h
+\?altar                            x
+\?idol                             I
+\?idol_floor                       i
+\?vault_wall                       |
+\?coffin                           g
+\?shop_sign                        K
+\?shop_door                        k
+\?lamp_hang                        l
+\?shop_wall                        .
+\?shop_item                        S
+\?wanted_poster                    W
+\?shopkeeper                       $
+\?lava                             w
+\?lava%50%floor                    a
+\?stone_floor                      +
+\?tomb_floor                       G
+\?haunted_corpse                   7
+\?bone_block                       f
+\?shop_wall%50                     ;
+\?shop_woodwall                    :
+\?die                              %
+\?merchant                         #
+\?cavemanshopkeeper                &
+\?sleeping_hiredhand               \
+\?forcefield                       ?
+\?forcefield_top                   '
+\?thief                            J
+
+
+\+vampire               30
+
+////////////////////////////////////////////////////////////////////////////////
+\.vlad_drill   // Room with Udjat's socket and drill
+////////////////////////////////////////////////////////////////////////////////
+
+// R 1
+\!flip
+====XX====
+=00=XX=00=
+=0==T0==0=
+000=00=000
+00000000u0
+00000000=0
+====00====
+1111001111
+
+////////////////////////////////////////////////////////////////////////////////
+\.vlad_entrance   // Room leading to Vlad's Castle
+////////////////////////////////////////////////////////////////////////////////
+
+// R 1
+\!dual
+\!flip
+111vvvAvvv H000000011
+11vvv000vv 0000vvv111
+v1v0f00000 00vvvlv1v1
+vvvvv00000 00vvvvvvvv
+ff00000000 000000000v
+vv0D0000vv 000D000Q0v
+vvvvvwwwvv v^vvv^vvvv
+vvvvvaaavv 1111111111
+
+// R 2
+\!dual
+\!flip
+vvvv11111v vH00000v11
+vvHvvvvvvv 0000vvvv11
+0000v0l0v0 0000lvvv1v
+0000f000f0 00000vvvvv
+0000vvvvv0 0Q000vvvvv
+0000f000f0 vfv00000vv
+vwwwv0D0vv vvv000D0vv
+vaaavvvvvv vvvvvvvvvv
+
+// R 3
+\!dual
+\!flip
+111vvvvvvv 11100000Cv
+11vvffffvv 11vvv0000v
+111vvvvvvv vvvvvv000v
+0000000000 0l00000O0v
+00000vv000 0000Q0000v
+0D000vvvvv 0D0vvv^^^v
+vvvwwvv1v1 vvvvv1111v
+vvvvvvv111 vvvvvv111v
+
+////////////////////////////////////////////////////////////////////////////////
+\.vlad_bottom_tunnel   // Bottom level room
+////////////////////////////////////////////////////////////////////////////////
+
+// R 1
+11H0000H11
+1200000021
+0000000000
+0000000000
+0000000000
+1000000001
+1200110021
+1100110011
+
+// R 2
+1122222211
+1000000001
+0000000000
+0000000000
+0000000000
+1>>0000<<1
+1110000111
+111wwww111
+
+// R 3
+11H1111H11
+0000000000
+0000000000
+0000000000
+0000000000
+1000000001
+1000000001
+1aaaaaaaa1
+
+////////////////////////////////////////////////////////////////////////////////
+\.vlad_bottom_exit   // Bottom level exit
+////////////////////////////////////////////////////////////////////////////////
+
+// E 1
+\!flip
+1111111111
+0011111000
+0011111000
+0000000000
+0000000000
+0000001100
+0110901100
+1111111111
+
+// E 2
+\!flip
+1111111111
+0000000000
+0000000000
+0000000000
+0000001100
+0090vvv100
+0111v1v111
+1111111111
+
+////////////////////////////////////////////////////////////////////////////////
+\.vlad_tunnel   // Tunnel leading up into the castle
+////////////////////////////////////////////////////////////////////////////////
+
+// R 1
+\!flip
+vHv0000vHv
+v0l0vv0l0v
+v000ff000v
+000vvvv000
+000vHHv000
+v00000000v
+11000000vv
+1vv000011v
+
+// R 2
+\!flip
+vvv0000vvv
+v4v0vv0v4v
+0f000000f0
+0f0vffv0f0
+0f0vvvv0f0
+1f0l00l0fv
+110000001v
+1vv0000111
+
+// R 3
+\!flip
+vvv0000vvv
+v0v0<<0v0v
+vOv0000vOv
+vvv0>>0vvv
+v00000000v
+v0vv00vv0v
+v00000000v
+vvv0000vvv
+
+// R 4
+\!flip
+vCv0000vvv
+v000vv0vtv
+v00vvvvvfv
+0000000000
+000O00O000
+000vvvv00v
+0000vv000v
+vvv0000vvv
+
+// R 5
+\!flip
+vvv000000v
+v0v0vv000v
+vOv000000v
+vvvvvvv00v
+000000000v
+00vv00vv0v
+000000000v
+vvv0000vvv
+
+// R 6
+\!flip
+vvv0vv000v
+vlv000000v
+vvvvvv000v
+v00000000v
+v000000<<v
+v000000vvv
+v>>0000fv1
+vvv0000vv1
+
+// R 7
+\!flip
+vvv0000v11
+vvv0vv0vvv
+vff0000ffv
+vfv0OO0vfv
+0ff0000ff0
+vvv0000vvv
+11f0OO0fvv
+1vv0000vvv
+
+// R 8
+\!flip
+v000000v11
+000000vvvv
+00vv000lvv
+0vvvv00000
+0vv>>>0000
+vvvv000000
+11f000>>>0
+1vv0000000
+
+// R 9
+\!flip
+vv00000Cvv
+1v^vv00000
+111vvvv000
+vvvvHvv0O0
+00vv000000
+0000000000
+vv000000O0
+vvv0000000
+
+////////////////////////////////////////////////////////////////////////////////
+\.setroom0-0
+////////////////////////////////////////////////////////////////////////////////
+
+// R 1
+11111111vv
+v11vvv11vv
+vvvvvvvvvv
+vHvvCvvvvv
+v000000fff
+v000000fvf
+v000000fff
+v000000vvv
+
+// R 2
+vHvvvvv111
+v0ffff2111
+v0vvvvvv1v
+v0vvCvvvvv
+v000000vvv
+v000000vv0
+v000000000
+v000000vvv
+
+// R 3
+vvvvvvvvvv
+vHvvvvvvvv
+v000000v(v
+v0vv0)0v0v
+v0vv000v0v
+v04f000000
+v0vv000000
+v0vvvvvvvv
+
+////////////////////////////////////////////////////////////////////////////////
+\.setroom0-1   // VLAD'S ROOM
+////////////////////////////////////////////////////////////////////////////////
+
+// R 1
+vvvvvvvvvv
+vvvvvHvvvv
+v00000000V
+v000000000
+vv00000000
+0000000000
+0000000000
+vvvvvvvvvv
+
+// R 2
+vvvvvvvvvv
+vvvvvvvvvv
+v00000000V
+v000000000
+vv00000000
+0000vvv000
+0000000000
+vvvvvvvvvv
+
+// R 3
+1111111vvv
+vv1111vvvv
+v00011000V
+v000000000
+vv00000000
+0000000000
+0000^11000
+vvvv111vvv
+
+////////////////////////////////////////////////////////////////////////////////
+\.setroom0-2
+////////////////////////////////////////////////////////////////////////////////
+
+// R 1
+\!onlyflip
+vvvvvvvvvv
+vvvvvHvvvv
+v000000000
+v000000000
+vv00000000
+0000000000
+000000000c
+vvvvvvvvvv
+
+// R 2
+\!onlyflip
+vvvvvvvvvv
+vvvvvvvvvv
+v000000000
+v000000000
+vv00000000
+0000vvv000
+000000000c
+vvvvvvvvvv
+
+// R 3
+\!onlyflip
+1111111vvv
+vv1111vvvv
+v000110000
+v000000000
+vv00000000
+0000000000
+0000^1100c
+vvvv111vvv
+
+////////////////////////////////////////////////////////////////////////////////
+\.setroom0-3
+////////////////////////////////////////////////////////////////////////////////
+
+// R 1
+\!onlyflip
+11111111vv
+v11vvv11vv
+vvvvvvvvvv
+vHvvCvvvvv
+v000000fff
+v000000fvf
+v000000fff
+v000000vvv
+
+// R 2
+\!onlyflip
+vHvvvvv111
+v0ffff2111
+v0vvvvvv1v
+v0vvCvvvvv
+v000000vvv
+v000000vv0
+v000000000
+v000000vvv
+
+// R 3
+\!onlyflip
+vvvvvvvvvv
+vHvvvvvvvv
+v000000v(v
+v0vv0)0v0v
+v0vv000v0v
+v04f000000
+v0vv000000
+v0vvvvvvvv
+
+////////////////////////////////////////////////////////////////////////////////
+\.setroom1-0
+////////////////////////////////////////////////////////////////////////////////
+
+// R 1
+v000000zvv
+v000000Hvv
+v000000000
+v110000000
+v11ffv0000
+vv1vvv0000
+vvvvvv0000
+vv00000000
+
+// R 2
+v000000vvv
+v000000Hvv
+v>>0000000
+vvv0000000
+vfv>>>0000
+vfvvvv0000
+vvvvvv0000
+vv00000000
+
+// R 3
+v000000vvv
+v000000Hvv
+v000000000
+v211120000
+vv1v1v0000
+vvvvvv0000
+vvvvvv0000
+vv00000000
+
+// R 4
+v000000vvv
+1000000Hvv
+11^0000000
+1110000000
+1v11^10000
+1vv1110000
+vvvvvv0000
+vv00000000
+
+////////////////////////////////////////////////////////////////////////////////
+\.setroom1-1   // TREASURE ROOM
+////////////////////////////////////////////////////////////////////////////////
+
+// R 1
+vvvvvvvvvv
+vvvvvv(vvf
+0000000vvv
+0)00000v00
+0000O00v0I
+vvv0000vOv
+vv0000000f
+vvvvvv0vvv
+
+// R 2
+vvvvvvvvvv
+vvvvvv(vvf
+000vv00vvv
+0O0vvv0v00
+0000000v0I
+vvv0)00vOv
+vv0000000f
+vvvvvv0vvv
+
+////////////////////////////////////////////////////////////////////////////////
+\.setroom1-2
+////////////////////////////////////////////////////////////////////////////////
+
+// R 1
+\!onlyflip
+vvvvvvvvvv
+vvvvvv(vvf
+0000000vvv
+0)00000v00
+0000O00v00
+vvv0000vOv
+vv0000000f
+vvvvvv0vvv
+
+// R 2
+\!onlyflip
+vvvvvvvvvv
+vvvvvv(vvf
+000vv00vvv
+0O0vvv0v00
+0000000v0I
+vvv0)00vOv
+vv0000000f
+vvvvvv0vvv
+
+////////////////////////////////////////////////////////////////////////////////
+\.setroom1-3
+////////////////////////////////////////////////////////////////////////////////
+
+// R 1
+\!onlyflip
+v000000zvv
+v000000Hvv
+v000000000
+v110000000
+v11ffv0000
+vv1vvv0000
+vvvvvv0000
+vv00000000
+
+// R 2
+\!onlyflip
+v000000vvv
+v000000Hvv
+v>>0000000
+vvv0000000
+vfv>>>0000
+vfvvvv0000
+vvvvvv0000
+vv00000000
+
+// R 3
+\!onlyflip
+v000000vvv
+v000000Hvv
+v000000000
+v211120000
+vv1v1v0000
+vvvvvv0000
+vvvvvv0000
+vv00000000
+
+// R 4
+\!onlyflip
+v000000vvv
+1000000Hvv
+11^0000000
+1110000000
+1v11^10000
+1vv1110000
+vvvvvv0000
+vv00000000
+
+////////////////////////////////////////////////////////////////////////////////
+\.setroom2-0
+////////////////////////////////////////////////////////////////////////////////
+
+// R 1
+vv0000000v
+vv0000000z
+vf000vvvvv
+vv000vvvvv
+vf00000000
+vv00000000
+vvvvvvvv00
+vvvvvvvv00
+
+// R 2
+vv0000000v
+vv0000000v
+vv000vvvvv
+vv00<<vvvv
+vv000vvv00
+v>>00vvv00
+vvv00fff00
+vvvvvvvv00
+
+// R 3
+vv00000^vv
+v00001111v
+v00001vvvv
+vv00011vvv
+vv^0000000
+v111000000
+v11v000000
+vvvvvvvv00
+
+// R 4
+vv0000000v
+v10000000v
+11000vvvvv
+11^00vvvvv
+1110000000
+v11^^11^00
+vv11111100
+vvv111vv00
+
+////////////////////////////////////////////////////////////////////////////////
+\.setroom2-1
+////////////////////////////////////////////////////////////////////////////////
+
+// R 1
+vvv0000000
+vv0000v000
+vvvvvvvv00
+HvvvHvvvtt
+000000vvvv
+000000vvv0
+0000000000
+0000000000
+
+////////////////////////////////////////////////////////////////////////////////
+\.setroom2-2
+////////////////////////////////////////////////////////////////////////////////
+
+// R 1
+\!onlyflip
+vvv0000000
+vv0000v000
+vvvvvvvv00
+HvvvHvvvtt
+000000vvvv
+000000vvv0
+0000000000
+0000000000
+
+////////////////////////////////////////////////////////////////////////////////
+\.setroom2-3
+////////////////////////////////////////////////////////////////////////////////
+
+// R 1
+\!onlyflip
+vv0000000v
+vv0000000z
+vf000vvvvv
+vv000vvvvv
+vf00000000
+vv00000000
+vvvvvvvv00
+vvvvvvvv00
+
+// R 2
+\!onlyflip
+vv0000000v
+vv0000000v
+vv000vvvvv
+vv00<<vvvv
+vv000vvv00
+v>>00vvv00
+vvv00fff00
+vvvvvvvv00
+
+// R 3
+\!onlyflip
+vv00000^vv
+v00001111v
+v00001vvvv
+vv00011vvv
+vv^0000000
+v111000000
+v11v000000
+vvvvvvvv00
+
+// R 4
+\!onlyflip
+vv0000000v
+v10000000v
+11000vvvvv
+11^00vvvvv
+1110000000
+v11^^11^00
+vv11111100
+vvv111vv00
+
+////////////////////////////////////////////////////////////////////////////////
+\.setroom3-0
+////////////////////////////////////////////////////////////////////////////////
+
+// R 1
+vvvvvvvv00
+vvvvvvvv00
+vtvvCCvv00
+vff0000000
+vff0000000
+vff0000000
+vvv0000vff
+vvv0000vvv
+
+// R 2
+vvvv0fff00
+vvvvvvvv00
+vvvvCCvv00
+vvv0000000
+vvv0000000
+vvv0000000
+vvv0000vff
+vvv0000vvv
+
+// R 3
+vvvvvvvv00
+vvvvvvvv00
+vvvvCCvv00
+vfv0000000
+vfv0000000
+vfv0000000
+vfv0000vff
+vvv0000vvv
+
+// R 4
+vvvvvvvv00
+v11vvvvv00
+1111CCvv00
+1200000000
+11^0000000
+1110000^00
+v1100001ff
+vvv00001vv
+
+////////////////////////////////////////////////////////////////////////////////
+\.setroom3-1
+////////////////////////////////////////////////////////////////////////////////
+
+// R 1
+0000000vv0
+0000000000
+0000000g00
+000000vvvv
+000000zvv0
+000vvvvvvv
+fv000000vv
+vvvvv000vv
+
+////////////////////////////////////////////////////////////////////////////////
+\.setroom3-2
+////////////////////////////////////////////////////////////////////////////////
+
+// R 1
+0vv0000000
+0000000000
+0g00000000
+vvvv000000
+0vvz000000
+vvvvvvv000
+vv000000vf
+vv000vvvvv
+
+////////////////////////////////////////////////////////////////////////////////
+\.setroom3-3
+////////////////////////////////////////////////////////////////////////////////
+
+// R 1
+\!onlyflip
+vvvvvvvv00
+vvvvvvvv00
+vtvvCCvv00
+vff0000000
+vff0000000
+vff0000000
+vvv0000vff
+vvv0000vvv
+
+// R 2
+\!onlyflip
+vvvv0fff00
+vvvvvvvv00
+vvvvCCvv00
+vvv0000000
+vvv0000000
+vvv0000000
+vvv0000vff
+vvv0000vvv
+
+// R 3
+\!onlyflip
+vvvvvvvv00
+vvvvvvvv00
+vvvvCCvv00
+vfv0000000
+vfv0000000
+vfv0000000
+vfv0000vff
+vvv0000vvv
+
+// R  4
+\!onlyflip
+vvvvvvvv00
+v11vvvvv00
+1111CCvv00
+1200000000
+11^0000000
+1110000^00
+v1100001ff
+vvv00001vv

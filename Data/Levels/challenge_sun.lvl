@@ -1,0 +1,151 @@
+
+\?empty                            0
+\?floor                            1
+\?floor%50                         2
+\?floor_hard                       X
+\?floor_hard%50%floor              Y
+\?adjacent_floor                   Z
+\?ladder                           L
+\?ladder_plat                      P
+\?door2                            D
+\?treasure                         t
+\?litwalltorch                     O
+\?lightarrow                       h
+\?shop_sign                        K
+\?shop_door                        k
+\?lamp_hang                        l
+\?shop_wall                        .
+\?shop_wall%50                     ;
+\?shop_woodwall                    :
+\?wanted_poster                    W
+\?merchant                         #
+\?forcefield                       ?
+\?timed_forcefield                 )
+\?challenge_waitroom               !
+\?forcefield_top                   '
+\?alien_generator                  A
+\?regenerating_block               r
+\?bigspear_trap                    C
+\?chunk_ground                     5
+\?chunk_air                        6
+\?chunk_door                       8
+\?sunken_floor                     =
+\?sunken_floor%50                  -
+\?door                             9
+\?spikes                           ^
+\?pipe                             p
+\?sticky_trap                      B
+\?altar                            x
+\?idol                             I
+\?shop_item                        S
+\?shopkeeper                       $
+\?storage_guy                      G
+\?storage_floor                    q
+\?autowalltorch                    M
+\?mother_statue                    s
+\?eggplant_door                    U
+\?water                            w
+\?locked_door                      /
+\?clover                           c
+\?push_block                       4
+\?bone_block                       f
+\?vault_wall                       |
+\?coffin                           g
+\?giant_frog                       n
+\?guts_floor                       T
+\?stone_floor                      +
+\?cursed_pot                       u
+\?haunted_corpse                   7
+\?die                              %
+\?cavemanshopkeeper                &
+\?sleeping_hiredhand               \
+\?thief                            J
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+\.challenge_entrance   // Dual entrance to the challenge rooms facing right, flipped for other side
+////////////////////////////////////////////////////////////////////////////////
+
+// room
+\!dual
+1111111111 000rrrr000
+1111111111 ==========
+11.......K ==========
+1..0l00... ....'=A='=
+..0000W0.0 .000000000
+.0000000:0 .000000000
+.0D00#00k0 .0D000c000
+:::::::::: XXXX?XXX!X
+
+////////////////////////////////////////////////////////////////////////////////
+\.challenge_0-0
+////////////////////////////////////////////////////////////////////////////////
+
+// room
+XXXXXXXXXX
+XXX=======
+XXX======A
+XXX=====00
+XXX=====00
+XXX'==A===
+XXX000000l
+XXX0000000
+
+////////////////////////////////////////////////////////////////////////////////
+\.challenge_0-1
+////////////////////////////////////////////////////////////////////////////////
+
+// room
+XXXXXXXXXX
+==========
+==========
+0000000000
+000Oh0O000
+000====000
+000r==r000
+000====000
+
+////////////////////////////////////////////////////////////////////////////////
+\.challenge_0-2
+////////////////////////////////////////////////////////////////////////////////
+
+// room
+\!onlyflip
+XXXXXXXXXX
+XXX=======
+XXX======A
+XXX=====00
+XXX=====00
+XXX'==A===
+XXX000000l
+XXX0000000
+
+////////////////////////////////////////////////////////////////////////////////
+\.challenge_1-0
+////////////////////////////////////////////////////////////////////////////////
+
+// room
+XXX000000L
+XXX0XXXXXP
+XXX0XXXXXL
+XXX0XXAXXL
+XXX000000P
+XXX00O0O0L
+XXX000000L
+XXX?XXXXXX
+
+////////////////////////////////////////////////////////////////////////////////
+\.challenge_1-2
+////////////////////////////////////////////////////////////////////////////////
+
+// room
+\!onlyflip
+XXX000000L
+XXX0XXXXXP
+XXX0XXXXXL
+XXX0XXAXXL
+XXX000000P
+XXX00O0O0L
+XXX000000L
+XXX?XXXXXX

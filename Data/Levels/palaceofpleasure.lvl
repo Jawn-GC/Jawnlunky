@@ -1,0 +1,248 @@
+\-size                                   4 5        // level size in rooms
+\-back_room_chance                       0          // % chance of a second room (default = 5%)
+\-back_room_interconnection_chance       0          // % chance of a second room interconnection (default = 20%)
+\-back_room_hidden_door_chance           0          // 1/N chance of a hidden door (default = 500)
+\-back_room_hidden_door_cache_chance     0          // 1/N chance of a hidden door to a cache (default = 1000)
+\-mount_chance                           5000       // 1/N chance of a mount (default = 5000)
+\-altar_room_chance                      0          // 1/N chance of an altar room (default = 14)
+\-idol_room_chance                       0          // 1/N chance of an idol room (default = 10)
+\-floor_side_spread_chance               10         // 1/N chance of a spreadable floor spreading to its side (default = 10)
+\-floor_bottom_spread_chance             5          // 1/N chance of a spreadable floor spreading to its bottom (default = 5)
+
+\?stone_floor                      >
+\?forcefield                       (
+\?locked_door                      /
+\?tomb_floor                       G
+\?haunted_corpse                   7
+\?shop_wall%50                     ;
+\?shop_woodwall                    :
+\?die                              %
+\?merchant                         #
+\?cavemanshopkeeper                &
+\?sleeping_hiredhand               \
+\?chunk_ground                     5
+\?chunk_air                        6
+\?chunk_door                       8
+\?empty                            0
+\?floor                            1
+\?floor%50                         2
+\?babylon_floor                    =
+\?babylon_floor%50%floor           -
+\?floor_hard                       X
+\?floor_hard%50%floor              Y
+\?adjacent_floor                   Z
+\?ladder                           L
+\?ladder_plat                      P
+\?door                             9
+\?door2                            D
+\?push_block                       4
+\?laser_trap                       ^
+\?spark_trap                       A
+\?timed_forcefield                 )
+\?forcefield_top                   '
+\?zoo_exhibit                      z
+\?mushroom_base                    T
+\?lamassu                          U
+\?altar                            x
+\?idol                             I
+\?idol_floor                       i
+\?vault_wall                       |
+\?coffin                           g
+\?shop_sign                        K
+\?shop_door                        k
+\?lamp_hang                        l
+\?shop_wall                        .
+\?shop_item                        S
+\?wanted_poster                    W
+\?shopkeeper                       $
+\?thief                            J
+\?lava                             w
+\?lava%50%floor                    a
+\?palace_floor                     u
+\?treasure_vaultchest              R
+\?palace_entrance                  C
+\?palace_table                     c
+\?palace_table_tray                j
+\?palace_chandelier                v
+\?palace_candle                    h
+\?palace_bookcase                  B
+\?litwalltorch                     O
+\?elevator                         V
+\?bone_block                       f
+\?treasure                         t
+\?clover                           Q
+\?cursed_pot                       <
+\?madametusk                       M
+\?bodyguard                        b
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+\.palaceofpleasure_0-0   // TOP FLOOR
+////////////////////////////////////////////////////////////////////////////////
+
+// room
+uuuuuuuuuu
+u000v00u00
+u000000u00
+u000000u0B
+u000000uB0
+uhL000000B
+u0L0c00000
+uuPuuuuuuu
+
+////////////////////////////////////////////////////////////////////////////////
+\.palaceofpleasure_0-1   // Madame Tusk
+////////////////////////////////////////////////////////////////////////////////
+
+// room
+uuuuuuuuuu
+0v000000v0
+0000000000
+0000000000
+0000000000
+Bh00M000h0
+b00uuuu00b
+uuBuuuuBuu
+
+////////////////////////////////////////////////////////////////////////////////
+\.palaceofpleasure_0-2
+////////////////////////////////////////////////////////////////////////////////
+
+// room
+uuuuuuuuuu
+00000v000u
+000000000u
+000000B00u
+00000B000u
+BB0j0000hu
+000c000L0u
+uuuuuuuPuu
+
+////////////////////////////////////////////////////////////////////////////////
+\.palaceofpleasure_1-0   // BOTTOM FLOOR
+////////////////////////////////////////////////////////////////////////////////
+
+// room
+uuLuuuuuuu
+uuL0v00000
+uuL000uu00
+00L000uu00
+I0LBBBuuh0
+uuL0000000
+uuL0b00000
+uuPuuuuuuu
+
+////////////////////////////////////////////////////////////////////////////////
+\.palaceofpleasure_1-1   // Entrance
+////////////////////////////////////////////////////////////////////////////////
+
+// room
+\!dual
+====00==== uu0uuuu0uu
+0000000000 0000v00000
+0000000000 0000000000
+0000=====0 0000000000
+0000=====0 0000000000
+00000000== 00B0h000hB
+0Tb000C0== c00B00D000
+111100==== uuuuuuuuuu
+
+////////////////////////////////////////////////////////////////////////////////
+\.palaceofpleasure_1-2
+////////////////////////////////////////////////////////////////////////////////
+
+// room
+uuuuuuuLuu
+00uQ0v0L0u
+00uu000L0u
+00ut000L0u
+0huuBBBL0u
+B000000Lhu
+00000b0L0u
+uuuuuuuuuu
+
+////////////////////////////////////////////////////////////////////////////////
+\.palaceofpleasure_2-0   // DUNGEON
+////////////////////////////////////////////////////////////////////////////////
+
+// room
+>>L>>>>>>>
+>0L0000000
+>0L0000000
+>0L0000000
+>0L0000000
+>0L0b00O00
+>>>>>>0000
+>>>>>>>>>>
+
+////////////////////////////////////////////////////////////////////////////////
+\.palaceofpleasure_2-1
+////////////////////////////////////////////////////////////////////////////////
+
+// room
+>>>>>>>>>>
+0000000000
+0000000000
+0000000000
+0000000000
+00O0000O00
+0000xx0000
+>>>>>>>>>>
+
+////////////////////////////////////////////////////////////////////////////////
+\.palaceofpleasure_2-2
+////////////////////////////////////////////////////////////////////////////////
+
+// room
+>>>'>>>>>>
+000000000>
+000000000>
+000000000>
+000000000>
+0000000ff>
+0000000f<>
+>>>(>>>>>>
+
+////////////////////////////////////////////////////////////////////////////////
+\.palaceofpleasure_3-0   // TREASURE ROOM
+////////////////////////////////////////////////////////////////////////////////
+
+// room
+>>>>>>>>>>
+>^00000000
+>>00000000
+>>RRRR0000
+>>>>>>0000
+>>00000000
+>>RRRR0000
+>>>>>>>>>>
+
+////////////////////////////////////////////////////////////////////////////////
+\.palaceofpleasure_3-1
+////////////////////////////////////////////////////////////////////////////////
+
+// room
+'>'>'>>>>>
+0000000000
+0000000000
+0000000000
+0000000000
+0000000O00
+0000000000
+(>(>(>>>>>
+
+////////////////////////////////////////////////////////////////////////////////
+\.palaceofpleasure_3-2   // TREASURE ROOM ENTRANCE
+////////////////////////////////////////////////////////////////////////////////
+
+// room
+\!dual
+====00==== >>>>>>>>>>
+0000000000 000000000>
+0========V 000000000>
+0000000000 000000000>
+000000===0 000000000>
+000000===0 O00O00O00>
+110b000/00 000b000D0>
+111100===0 >>>>>>>>>>

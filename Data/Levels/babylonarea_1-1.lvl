@@ -1,0 +1,89 @@
+
+\?forcefield                       ?
+\?cursed_pot                       u
+\?chunk_ground                     5
+\?chunk_air                        6
+\?chunk_door                       8
+\?empty                            0
+\?floor                            1
+\?floor%50                         2
+\?babylon_floor                    =
+\?babylon_floor%50%floor           -
+\?floor_hard                       X
+\?floor_hard%50%floor              Y
+\?adjacent_floor                   Z
+\?ladder                           L
+\?ladder_plat                      P
+\?door                             9
+\?door2                            D
+\?push_block                       4
+\?laser_trap                       ^
+\?spark_trap                       A
+\?timed_forcefield                 )
+\?forcefield_top                   '
+\?elevator                         V
+\?zoo_exhibit                      z
+\?treasure                         t
+\?litwalltorch                     O
+\?mushroom_base                    T
+\?lamassu                          U
+\?altar                            x
+\?idol                             I
+\?idol_floor                       i
+\?vault_wall                       |
+\?coffin                           g
+\?shop_sign                        K
+\?shop_door                        k
+\?lamp_hang                        l
+\?shop_wall                        .
+\?shop_item                        S
+\?wanted_poster                    W
+\?shopkeeper                       $
+\?thief                            J
+\?lava                             w
+\?lava%50%floor                    a
+\?locked_door                      /
+\?stone_floor                      +
+\?tomb_floor                       G
+\?haunted_corpse                   7
+\?bone_block                       f
+\?shop_wall%50                     ;
+\?shop_woodwall                    :
+\?die                              %
+\?merchant                         #
+\?cavemanshopkeeper                &
+\?sleeping_hiredhand               \
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+\.entrance
+////////////////////////////////////////////////////////////////////////////////
+
+// R 1
+\!purge
+\!flip
+=====u0===
+======0===
+0000000000
+0000000000
+0090000000
+0===000000
+==w===V===
+=====111==
+
+////////////////////////////////////////////////////////////////////////////////
+\.entrance_drop
+////////////////////////////////////////////////////////////////////////////////
+
+// R 1
+\!purge
+\!flip
+==========
+===000====
+000090000=
+000=====V=
+000000==00
+000000=u00
+0T0000==0=
+111100====

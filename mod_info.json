@@ -1,0 +1,12 @@
+{
+    "image_map": {
+        "temple_spikes.png": {
+            "Data/Textures/floor_temple.png": [
+                {
+                    "from": [0,0,384,256],
+                    "to": [640,1024,1024,1280]
+                }
+            ]
+        }
+    }
+}
